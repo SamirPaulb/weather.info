@@ -1,0 +1,44 @@
+<!doctype html>
+<html class="no-js" lang="en">
+{{>header}}
+
+<body>
+    {{>navbar}}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto first-layer ">
+              <div class="container-fluid  main_content">
+
+                    <form class="temp_form ">
+
+                        <input type="text" id="cityName" placeholder="Enter you city name.." autocomplete="off">
+                        <br>
+                        <input type="submit" value="search" id="submitBtn">
+                        <p id="temp_err"></p>
+                    </form>
+
+                    <div class="tempInformation  ">
+                        <div class="top_layer">
+                            <p id="day"></p>
+                            <p id="today_date"></p>
+                        </div>
+                        <div class="main_layer " id="main_layer">
+                            <p id="city_name">Get output here </p>
+                            <div class="middle_layer" id="middle_layer">
+                                <p id="temp" class="temp"><span id="temp_real_val">0</span><sup>o</sup>C</p>
+                                <p id="temp_status"><i class='fa  fa-cloud' style='color: #a4b0be;'></i></p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+    <script src="js/main.js"></script>
+</body>
+
+</html>

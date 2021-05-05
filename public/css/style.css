@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@900&display=swap');
+
+*{
+   margin:0px;
+   padding:0;
+    box-sizing :border-box;
+    font-family:"piazzola",serif;
+}
+
+:root{
+    --main-bg:#1e272e;
+    --main-color: #0097e6;
+}
+
+html{
+    font-size:62.5%;
+}
+body{
+    height: 100vh;
+    display:flex;
+    flex-direction:column;
+
+}
+.row{
+    margin:0;
+}
+.main-menu{
+    background-color:#1e272e ;
+}
+.navbar {
+    color:#fff;
+    background-color:#1e272e ;
+    padding:2rem;
+}
+.navbar li{
+        margin-left:1.5rem;
+}
+.navbar a{
+    color:white;
+    font-size:1.8rem;
+}
+.navbar-toggler{
+    background-color:grey;
+}
+
+.navbar a:hover{
+    color: #0097e6;
+}
+.main_header_left{
+    height:70rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-transform: capitalize;
+
+    
+}
+.main_header_left a{
+    text-decoration: none;
+    
+}
+.main_header_right{
+    height:70rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+   
+   
+}
+.main_header_left p{
+    font-size: 2rem;
+
+}
+.main_header_left h2{
+    font-size: 4rem;
+    margin:1rem 0 4rem 0;
+    text-transform: capitalize;
+    
+}
+.main_header_left .txtclr{
+    color:#0097e6;
+}
+.main_header_left button{
+    border:none;
+    font-weight: 400;
+    padding:0.8rem 1.8rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow:0 8px 6px -6px #000;
+    outline:none;
+    text-decoration: none;
+    text-transform: none;
+    
+}
+.main_header_right img{
+    align-items: center;
+}
+.main_header_left button:hover{
+    box-shadow:0 8px 6px -6px #0097e6;
+}
+.main_header_error h2{
+        text-transform: capitalize;
+        margin-left: 14rem;
+        font-size: 3.4rem;
+}
+.main_header_error button{
+    text-transform: capitalize;
+    font-weight: 400;
+    border:none;
+    margin-left: 25rem;
+    margin-top: 1.5rem;;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow:0 8px 6px -6px #000;
+    outline:none;
+    padding:0.8rem 1.8rem;
+}
+.main_header_error button:hover{
+    box-shadow:0 8px 6px -6px #0097e6;
+}
+.first-layer{
+    align-items: center;
+    padding:1rem 1.4rem;
+  
+    display: flex;
+    
+    justify-content: center;
+  
+
+
+}
+/* weather page style */
+/* temp input fields style code */
+
+.temp_form {
+  width: 100%;
+  position: relative;
+  margin: 10rem 5rem auto;
+}
+
+.temp_form input[type="text"] {
+  width: 100%;
+  padding: 2rem 5rem 2rem 2rem;
+  background: #1e202b;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  border-radius: 3rem;
+}
+
+::placeholder {
+  color: #bfc1c8;
+}
+
+.temp_form input[type="submit"] {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: none;
+  background: #009ad8;
+  padding: 0 3rem;
+  border-radius: 3rem;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.temp_form input[type="submit"]:hover {
+  color: #009ad8;
+  background-color: #fff;
+ 
+}
+
+/* temp detials show here */
+
+.tempInformation {
+  width: 50%;
+  margin: auto;
+  min-height: 20rem;
+  background-color: #161929;
+  border-radius: 1rem;
+ 
+  font-family: "Roboto", sans-serif;
+}
+
+.top_layer {
+  width: 100%;
+  height: 20%;
+  background-color: #2d303d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 2rem 0;
+}
+
+.top_layer p {
+  color: #fff;
+  font-weight: 300;
+  padding:2rem;
+  font-size: 1.3rem;
+}
+
+.main_layer {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  padding:2rem;
+}
+
+.main_layer #city_name {
+  padding: 2rem 0;
+  color: #bfc1c8;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.main_layer .middle_layer {
+  display: flex;
+  
+  justify-content:space-evenly;
+
+ 
+  color: #fff;
+}
+#temp_status{
+  position:relative;
+  left:75%;
+ 
+}
+#temp{
+  position:relative;
+  left:25%;
+}
+
+.main_layer .middle_layer p,
+.main_layer .middle_layer .fa {
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+.fa {
+  color: #009ad8;
+}
+
+sup {
+  font-size: 4rem;
+  margin-top: -2rem;
+}
+
+
+
+footer{
+    width: 100%;
+   
+    margin-top: auto;
+    
+ 
+    
+    background-color: #1e272e;
+   
+}
+footer{
+    line-height:5rem;
+    color:white;
+    font-size:1.4rem;
+    text-align:center;
+}
+
+@media (max-width:768px){
+    .main_header_left{
+        height:auto;
+        margin:5rem 0;
+
+    }
+    .main_header_right{
+        height:auto;
+        margin-top:3rem ;
+    }
+    .temp_form {
+        width: auto;
+      }
+     .tempInformation {
+        width: auto;
+      }
+      .main_layer .middle_layer p,
+  .main_layer .middle_layer .fa sup {
+    font-size: 2.5rem;
+    
+    font-weight: 900;
+  }
+  .main_layer .middle_layer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  
+    color: #fff;
+  }
+ 
+}
+
+
+
+  

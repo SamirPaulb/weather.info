@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@900&display=swap');
+
+*{
+   margin:0px;
+   padding:0;
+    box-sizing :border-box;
+    font-family:"piazzola",serif;
+}
+
+:root{
+    --main-bg:#1e272e;
+    --main-color: #0097e6;
+}
+
+html{
+    font-size:62.5%;
+}
+body{
+    height: 100vh;
+    display:flex;
+    flex-direction:column;
+
+}
+.row{
+    margin:0;
+}
+.main-menu{
+    background-color:#1e272e ;
+}
+.navbar {
+    color:#fff;
+    background-color:#1e272e ;
+    padding:2rem;
+}
+.navbar li{
+        margin-left:1.5rem;
+}
+.navbar a{
+    color:white;
+    font-size:1.8rem;
+}
+.navbar-toggler{
+    background-color:grey;
+}
+
+.navbar a:hover{
+    color: #0097e6;
+}
+.main_header_left{
+    height:70rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-transform: capitalize;
+    
+}
+.main_header_left a{
+    text-decoration: none;
+    
+}
+.main_header_right{
+    height:70rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+   
+   
+}
+.main_header_left p{
+    font-size: 2rem;
+
+}
+.main_header_left h2{
+    font-size: 4rem;
+    margin:1rem 0 4rem 0;
+    text-transform: capitalize;
+    
+}
+.main_header_left .txtclr{
+    color:#0097e6;
+}
+.main_header_left button{
+    border:none;
+    padding:0.8rem 1.8rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow:0 8px 6px -6px #000;
+    outline:none;
+    text-decoration: none;
+    text-transform: none;
+    
+}
+.main_header_right img{
+    align-items: center;
+}
+.main_header_left button:hover{
+    box-shadow:0 8px 6px -6px #0097e6;
+}
+footer{
+    width: 100%;
+   
+    margin-top: auto;
+    
+ 
+    
+    background-color: #1e272e;
+   
+}
+footer{
+    line-height:5rem;
+    color:white;
+    font-size:1.4rem;
+    text-align:center;
+}
+
+@media (max-width:768px){
+    .main_header_left{
+        height:auto;
+        margin:5rem 0;
+
+    }
+    .main_header_right{
+        height:auto;
+        margin-top:3rem ;
+    }
+}
